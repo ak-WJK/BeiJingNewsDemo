@@ -10,7 +10,9 @@ import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 
+import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.R;
+import com.atguigu.beijingnewsdemo.utils.SPUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,9 +55,18 @@ public class WecomeActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
+                boolean isOnStart = SPUtils.getBoolean(WecomeActivity.this, "boolean", false);
 
-                Intent intent = new Intent(WecomeActivity.this, GuideActivity.class);
-                startActivity(intent);
+                if (isOnStart) {
+                    Intent intent = new Intent(WecomeActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(WecomeActivity.this, GuideActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+
 
             }
 

@@ -22,7 +22,8 @@
         android:layout_marginBottom="80dp"
         android:background="@drawable/guide_btn_bg_select"
         android:text="开始体验"
-        android:textColor="@drawable/guide_textcolor_bg_select" />
+        android:textColor="@drawable/guide_textcolor_bg_select"
+        android:visibility="gone" />
 
 
     <RelativeLayout

@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -16,6 +17,7 @@ import android.widget.RelativeLayout;
 import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.R;
 import com.atguigu.beijingnewsdemo.utils.DensityUtil;
+import com.atguigu.beijingnewsdemo.utils.SPUtils;
 
 import java.util.ArrayList;
 
@@ -46,6 +48,7 @@ public class GuideActivity extends AppCompatActivity {
 
     };
     private ArrayList<ImageView> imageViews;
+    private AlphaAnimation alphaAnimation;
 
 
     @Override
@@ -53,10 +56,16 @@ public class GuideActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
         ButterKnife.bind(this);
-
+        setAnimation();
         initView();
 
 
+    }
+
+    private void setAnimation() {
+        alphaAnimation = new AlphaAnimation(0, 1);
+        alphaAnimation.setDuration(1000);
+        alphaAnimation.setFillAfter(true);
     }
 
     private void initView() {
@@ -133,6 +142,15 @@ public class GuideActivity extends AppCompatActivity {
          */
         @Override
         public void onPageSelected(int position) {
+            if (position == imageViews.size() - 1) {
+
+                btnStartActivity.startAnimation(alphaAnimation);
+                btnStartActivity.setVisibility(View.VISIBLE);
+
+            } else {
+                btnStartActivity.clearAnimation();
+                btnStartActivity.setVisibility(View.GONE);
+            }
 
 
         }
@@ -153,6 +171,9 @@ public class GuideActivity extends AppCompatActivity {
 
         @Override
         public void onGlobalLayout() {
+
+            //取消监听
+            llPoint.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
             distance = llPoint.getChildAt(1).getLeft() - llPoint.getChildAt(0).getLeft();
 
@@ -193,7 +214,12 @@ public class GuideActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_start_activity)
     public void onViewClicked() {
+
+        SPUtils.saveBoolean(GuideActivity.this, "boolean", true);
+
         Intent intent = new Intent(GuideActivity.this, MainActivity.class);
         startActivity(intent);
     }
+
+
 }
