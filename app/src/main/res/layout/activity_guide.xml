@@ -24,16 +24,30 @@
         android:text="开始体验"
         android:textColor="@drawable/guide_textcolor_bg_select" />
 
-    <LinearLayout
-        android:id="@+id/ll_point"
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:orientation="horizontal">
+        android:layout_marginBottom="60dp">
 
-    </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_red_point"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/guide_point_pressed" />
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

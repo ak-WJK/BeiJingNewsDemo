@@ -7,9 +7,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.R;
@@ -30,6 +32,12 @@ public class GuideActivity extends AppCompatActivity {
     Button btnStartActivity;
     @BindView(R.id.ll_point)
     LinearLayout llPoint;
+    @BindView(R.id.iv_red_point)
+    ImageView ivRedPoint;
+
+
+    private int distance;
+
 
     private int[] icons = {
             R.drawable.guide_1,
@@ -71,9 +79,12 @@ public class GuideActivity extends AppCompatActivity {
             point.setLayoutParams(perams);
             //设置点之间的距离
             if (i != 0) {
-                perams.leftMargin = 20;
+                perams.leftMargin = 28;
 
             }
+
+            //得到两个点之间的距离
+            llPoint.getViewTreeObserver().addOnGlobalLayoutListener(new MyOnGlobalLayoutListener());
 
             //装配到线性布局中
             llPoint.addView(point);
@@ -82,6 +93,71 @@ public class GuideActivity extends AppCompatActivity {
         }
 
         viewpager.setAdapter(new MyAdapter());
+
+
+        viewpager.addOnPageChangeListener(new MyOnPageChangeListener());
+
+    }
+
+    class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {
+
+
+        /**
+         * 当页面滑动的时候回调
+         *
+         * @param position             位置
+         * @param positionOffset       滑动的百分比
+         * @param positionOffsetPixels 滑动的像素位置
+         */
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+            //滑动的百分比 = 滑动的距离:屏幕的宽度
+            //滑动距离/屏幕宽度 = 红点移动距离/点距离
+            //红点移动距离=红点的距离*滑动百分比;
+            float moveDistance = distance * (position + positionOffset);
+            //得到红点控件的宽高参数
+            RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) ivRedPoint.getLayoutParams();
+
+            //设置左边距为移动的距离
+            layoutParams.leftMargin = (int) moveDistance;
+            //用此函数重绘得到效果
+            ivRedPoint.setLayoutParams(layoutParams);
+
+
+        }
+
+        /**
+         * 当页面选中的时候回调
+         *
+         * @param position
+         */
+        @Override
+        public void onPageSelected(int position) {
+
+
+        }
+
+        /**
+         * 当页面状态改变的时候回调
+         *
+         * @param state
+         */
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
+        }
+    }
+
+    class MyOnGlobalLayoutListener implements ViewTreeObserver.OnGlobalLayoutListener {
+
+
+        @Override
+        public void onGlobalLayout() {
+
+            distance = llPoint.getChildAt(1).getLeft() - llPoint.getChildAt(0).getLeft();
+
+
+        }
     }
 
 
