@@ -1,15 +1,15 @@
 package com.atguigu.beijingnewsdemo.detailpager;
 
 import android.content.Context;
-import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.atguigu.beijingnewsdemo.R;
 import com.atguigu.beijingnewsdemo.base.MenuDetailBasePager;
 import com.atguigu.beijingnewsdemo.domain.NewsPagerBean;
+import com.atguigu.beijingnewsdemo.view.NoScrollViewPager;
+import com.atguigu.beijingnewsdemo.view.ScrollTabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +26,9 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
 
     private final List<NewsPagerBean.DataBean.ChildrenBean> dataBeanList;
     @BindView(R.id.viewpager)
-    ViewPager viewpager;
+    NoScrollViewPager viewpager;
     @BindView(R.id.tab)
-    TabLayout tab;
+    ScrollTabLayout tab;
 
     private ArrayList<TabDedailPager> tabDedailPagers;
 
@@ -45,7 +45,7 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
 
 
 
-//将tablayout与viewpager建立关系
+        //将tablayout与viewpager建立关系
         tab.setupWithViewPager(viewpager);
 
 

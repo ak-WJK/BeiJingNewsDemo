@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <android.support.design.widget.TabLayout
+    <com.atguigu.beijingnewsdemo.view.ScrollTabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,13 +15,13 @@
         app:tabGravity="fill"
         app:tabMode="scrollable"
         app:tabBackground="@android:color/white">
-    </android.support.design.widget.TabLayout>
+    </com.atguigu.beijingnewsdemo.view.ScrollTabLayout>
 
-    <android.support.v4.view.ViewPager
+    <com.atguigu.beijingnewsdemo.view.NoScrollViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v4.view.ViewPager>
+    </com.atguigu.beijingnewsdemo.view.NoScrollViewPager>
 
 </LinearLayout>

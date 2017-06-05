@@ -5,27 +5,28 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="METHOD_DELETED"
     plugin-version="3.0.0-alpha1"
-    timestamp="1496680245607"
+    timestamp="1496681066573"
     token="-7549935888958633727"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1164" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="17" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
     <artifact
-        location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
@@ -70,11 +71,24 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496680245607"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1496680950291"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
         <artifact
             location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1496681066573"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>
