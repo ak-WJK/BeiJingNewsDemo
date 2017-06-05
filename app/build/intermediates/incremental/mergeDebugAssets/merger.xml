@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config=":SlidingMenu_library"><source path="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\SlidingMenu_library\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\src\main\assets"/><source path="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\src\debug\assets"/></dataSet></merger>
