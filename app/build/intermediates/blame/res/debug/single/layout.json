@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\news_tab_pager_layout.xml",
+        "source": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\src\\main\\res\\layout\\news_tab_pager_layout.xml"
+    },
+    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\layout\\notification_template_part_time.xml"
     },

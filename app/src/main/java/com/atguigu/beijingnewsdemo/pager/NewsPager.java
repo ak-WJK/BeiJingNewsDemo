@@ -37,6 +37,7 @@ public class NewsPager extends BasePager {
     private NewsPagerBean.DataBean dataBean;
 
     private ArrayList<MenuDetailBasePager> pagerArrayList;
+    private List<NewsPagerBean.DataBean> dataBeanList;
 
     public NewsPager(Context context) {
         super(context);
@@ -79,33 +80,37 @@ public class NewsPager extends BasePager {
                     }
                 });
 
+
+    }
+
+    private void anaylsisJson(String json) {
+
+        NewsPagerBean newsPagerBean = new Gson().fromJson(json, NewsPagerBean.class);
+        dataBeanList = newsPagerBean.getData();
+//
+//        for (int i = 0; i < dataBeanList.size(); i++) {
+//            dataBean = dataBeanList.get(i);
+//            String title = dataBean.getTitle();
+//
+////            LogUtils.e("TAG", "title" + title);
+//
+//        }
+
+
+
+
         pagerArrayList = new ArrayList();
 
-        pagerArrayList.add(new NewsMenuDetailBasePager(context));
+        pagerArrayList.add(new NewsMenuDetailBasePager(context, dataBeanList.get(0).getChildren()));
         pagerArrayList.add(new TopicMenuDetailBasePager(context));
         pagerArrayList.add(new PhotosMenuDetailBasePager(context));
         pagerArrayList.add(new InteractMenuDetailBasePager(context));
         pagerArrayList.add(new VoteMenuDetailBasePager(context));
 
         setSwitchPager(0);
-    }
-
-    private void anaylsisJson(String json) {
-
-        NewsPagerBean newsPagerBean = new Gson().fromJson(json, NewsPagerBean.class);
-        List<NewsPagerBean.DataBean> dataBeanList = newsPagerBean.getData();
-
-        for (int i = 0; i < dataBeanList.size(); i++) {
-            dataBean = dataBeanList.get(i);
-            String title = dataBean.getTitle();
-
-//            LogUtils.e("TAG", "title" + title);
-
-        }
 
 
         MainActivity mainActivity = (MainActivity) context;
-
         //方法一
         FragmentManager fragmentManager = mainActivity.getSupportFragmentManager();
         LeftFragment leftFragment = (LeftFragment) fragmentManager.findFragmentByTag(String.valueOf(mainActivity.TAG_LEFT));

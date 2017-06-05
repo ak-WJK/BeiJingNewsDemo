@@ -7,22 +7,22 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0-alpha1"
-    timestamp="1496674438837"
+    timestamp="1496677679566"
     token="-7549935888958633727"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2085" />
+        duration="1309" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="14" />
     <task
         name="verifier"
-        duration="5" />
+        duration="4" />
 
     <artifact
         location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -71,8 +71,29 @@
     </build>
     <build
         build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1496677040534"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1496674438837"
+        timestamp="1496677679566"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
