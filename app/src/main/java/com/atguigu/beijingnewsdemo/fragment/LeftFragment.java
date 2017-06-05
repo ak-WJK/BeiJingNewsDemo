@@ -11,6 +11,7 @@ import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.R;
 import com.atguigu.beijingnewsdemo.base.BaseFragment;
 import com.atguigu.beijingnewsdemo.domain.NewsPagerBean;
+import com.atguigu.beijingnewsdemo.pager.NewsPager;
 import com.atguigu.beijingnewsdemo.utils.DensityUtil;
 
 import java.util.List;
@@ -50,12 +51,22 @@ public class LeftFragment extends BaseFragment {
                 MainActivity mainActivity = (MainActivity) context;
                 mainActivity.getSlidingMenu().toggle();
 
+                switchPager(prePosition);
 
             }
         });
 
 
         return listView;
+    }
+
+    private void switchPager(int prePosition) {
+
+        MainActivity mainActivity = (MainActivity) context;
+        ContentFragment contentFragment = (ContentFragment) mainActivity.getSupportFragmentManager().findFragmentByTag(mainActivity.TAG_MAIN);
+        NewsPager newsPager = contentFragment.getNewsPager();
+        newsPager.setSwitchPager(prePosition);
+
     }
 
 

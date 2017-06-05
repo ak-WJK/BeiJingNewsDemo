@@ -4,10 +4,17 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.v4.app.FragmentManager;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TextView;
 
 import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.base.BasePager;
+import com.atguigu.beijingnewsdemo.base.MenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.InteractMenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.NewsMenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.PhotosMenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.TopicMenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.VoteMenuDetailBasePager;
 import com.atguigu.beijingnewsdemo.domain.NewsPagerBean;
 import com.atguigu.beijingnewsdemo.fragment.LeftFragment;
 import com.atguigu.beijingnewsdemo.utils.ContentUrl;
@@ -16,6 +23,7 @@ import com.google.gson.Gson;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Call;
@@ -28,6 +36,7 @@ public class NewsPager extends BasePager {
     private String url = ContentUrl.NEWSCENTER_PAGER_URL;
     private NewsPagerBean.DataBean dataBean;
 
+    private ArrayList<MenuDetailBasePager> pagerArrayList;
 
     public NewsPager(Context context) {
         super(context);
@@ -70,6 +79,15 @@ public class NewsPager extends BasePager {
                     }
                 });
 
+        pagerArrayList = new ArrayList();
+
+        pagerArrayList.add(new NewsMenuDetailBasePager(context));
+        pagerArrayList.add(new TopicMenuDetailBasePager(context));
+        pagerArrayList.add(new PhotosMenuDetailBasePager(context));
+        pagerArrayList.add(new InteractMenuDetailBasePager(context));
+        pagerArrayList.add(new VoteMenuDetailBasePager(context));
+
+        setSwitchPager(0);
     }
 
     private void anaylsisJson(String json) {
@@ -97,6 +115,15 @@ public class NewsPager extends BasePager {
 
         leftFragment.setMenuData(dataBeanList);
 
+
+    }
+
+    public void setSwitchPager(int prePosition) {
+        MenuDetailBasePager pager = pagerArrayList.get(prePosition);
+        fl_content.removeAllViews();
+        View rootView = pager.rootView;
+        pager.initData();
+        fl_content.addView(rootView);
 
     }
 }
