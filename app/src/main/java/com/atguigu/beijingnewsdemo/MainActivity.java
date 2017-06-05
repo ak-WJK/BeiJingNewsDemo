@@ -1,6 +1,7 @@
 package com.atguigu.beijingnewsdemo;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
 import com.atguigu.beijingnewsdemo.fragment.ContentFragment;
@@ -12,6 +13,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
     public static final String TAG_MAIN = "tag_main";
     public static final String TAG_LEFT = "tag_left";
+    private Fragment leftFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,4 +56,7 @@ public class MainActivity extends SlidingFragmentActivity {
     }
 
 
+    public LeftFragment getLeftFragment() {
+        return (LeftFragment) getSupportFragmentManager().findFragmentByTag(TAG_LEFT);
+    }
 }

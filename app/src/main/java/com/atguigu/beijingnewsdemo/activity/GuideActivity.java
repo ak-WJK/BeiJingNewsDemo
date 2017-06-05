@@ -1,5 +1,6 @@
 package com.atguigu.beijingnewsdemo.activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -140,6 +141,7 @@ public class GuideActivity extends AppCompatActivity {
          *
          * @param position
          */
+        @SuppressLint("WrongConstant")
         @Override
         public void onPageSelected(int position) {
             if (position == imageViews.size() - 1) {

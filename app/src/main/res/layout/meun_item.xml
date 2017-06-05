@@ -1,0 +1,14 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_menu_guidle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/menu_guidle_select"
+    android:drawablePadding="5dp"
+    android:enabled="false"
+    android:gravity="center_vertical"
+    android:minHeight="55dp"
+    android:text="北京"
+    android:textColor="@drawable/menu_guidle_textcolor_select"
+    android:textSize="15sp"
+
+    />
