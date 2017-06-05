@@ -1,4 +1,4 @@
-#Mon Jun 05 23:37:29 CST 2017
+#Tue Jun 06 00:30:48 CST 2017
 base.0=C\:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 renamed.1=classes2.dex
 renamed.0=classes.dex

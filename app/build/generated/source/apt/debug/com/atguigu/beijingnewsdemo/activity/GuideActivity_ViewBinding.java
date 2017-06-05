@@ -18,7 +18,7 @@ import java.lang.Override;
 public class GuideActivity_ViewBinding implements Unbinder {
   private GuideActivity target;
 
-  private View view2131427428;
+  private View view2131558526;
 
   @UiThread
   public GuideActivity_ViewBinding(GuideActivity target) {
@@ -33,7 +33,7 @@ public class GuideActivity_ViewBinding implements Unbinder {
     target.viewpager = Utils.findRequiredViewAsType(source, R.id.viewpager, "field 'viewpager'", ViewPager.class);
     view = Utils.findRequiredView(source, R.id.btn_start_activity, "field 'btnStartActivity' and method 'onViewClicked'");
     target.btnStartActivity = Utils.castView(view, R.id.btn_start_activity, "field 'btnStartActivity'", Button.class);
-    view2131427428 = view;
+    view2131558526 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class GuideActivity_ViewBinding implements Unbinder {
     target.llPoint = null;
     target.ivRedPoint = null;
 
-    view2131427428.setOnClickListener(null);
-    view2131427428 = null;
+    view2131558526.setOnClickListener(null);
+    view2131558526 = null;
   }
 }

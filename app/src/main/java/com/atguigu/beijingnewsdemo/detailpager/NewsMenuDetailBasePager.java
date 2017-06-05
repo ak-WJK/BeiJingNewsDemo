@@ -1,6 +1,7 @@
 package com.atguigu.beijingnewsdemo.detailpager;
 
 import android.content.Context;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -26,6 +27,8 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
     private final List<NewsPagerBean.DataBean.ChildrenBean> dataBeanList;
     @BindView(R.id.viewpager)
     ViewPager viewpager;
+    @BindView(R.id.tab)
+    TabLayout tab;
 
     private ArrayList<TabDedailPager> tabDedailPagers;
 
@@ -40,6 +43,12 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
         View view = View.inflate(context, R.layout.news_tab_pager_layout, null);
         ButterKnife.bind(this, view);
 
+
+
+//将tablayout与viewpager建立关系
+        tab.setupWithViewPager(viewpager);
+
+
         return view;
     }
 
@@ -49,7 +58,7 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
         tabDedailPagers = new ArrayList<>();
         for (int i = 0; i < dataBeanList.size(); i++) {
 
-            tabDedailPagers.add(new TabDedailPager(context , dataBeanList.get(i)));
+            tabDedailPagers.add(new TabDedailPager(context, dataBeanList.get(i)));
 
         }
 
@@ -80,6 +89,12 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
             @Override
             public boolean isViewFromObject(View view, Object o) {
                 return view == o;
+            }
+
+
+            @Override
+            public CharSequence getPageTitle(int position) {
+                return dataBeanList.get(position).getTitle();
             }
         });
 

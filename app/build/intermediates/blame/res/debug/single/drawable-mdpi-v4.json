@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -100,6 +104,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+    },
+    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
@@ -136,12 +144,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",

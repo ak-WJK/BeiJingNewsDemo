@@ -116,6 +116,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
@@ -140,6 +144,14 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\notification_bg_low.xml"
     },
@@ -158,6 +170,10 @@
     {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
@@ -184,11 +200,15 @@
         "source": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\src\\main\\res\\drawable\\guide_textcolor_bg_select.xml"
     },
     {
-        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.3.1.aar\\ad75a4eb5bc5ec7ed73d01a7515bb40f\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_guidle_select.xml",
         "source": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\src\\main\\res\\drawable\\menu_guidle_select.xml"
+    },
+    {
+        "merged": "C:\\ProjectAndroidWorkPatn\\BeiJingNewsDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\7791cc05a7eb1eeb1d600c29c9a14aab\\res\\drawable\\abc_item_background_holo_dark.xml"
     }
 ]

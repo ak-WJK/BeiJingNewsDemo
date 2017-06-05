@@ -17,13 +17,13 @@ import java.lang.Override;
 public class ContentFragment_ViewBinding implements Unbinder {
   private ContentFragment target;
 
-  private View view2131427436;
+  private View view2131558546;
 
-  private View view2131427437;
+  private View view2131558547;
 
-  private View view2131427438;
+  private View view2131558548;
 
-  private View view2131427435;
+  private View view2131558545;
 
   @UiThread
   public ContentFragment_ViewBinding(final ContentFragment target, View source) {
@@ -33,7 +33,7 @@ public class ContentFragment_ViewBinding implements Unbinder {
     target.vp = Utils.findRequiredViewAsType(source, R.id.vp, "field 'vp'", ViewPager.class);
     view = Utils.findRequiredView(source, R.id.rb_home, "field 'rbHome' and method 'onViewClicked'");
     target.rbHome = Utils.castView(view, R.id.rb_home, "field 'rbHome'", RadioButton.class);
-    view2131427436 = view;
+    view2131558546 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ContentFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.rb_news, "field 'rbNews' and method 'onViewClicked'");
     target.rbNews = Utils.castView(view, R.id.rb_news, "field 'rbNews'", RadioButton.class);
-    view2131427437 = view;
+    view2131558547 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class ContentFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.rb_setting, "field 'rbSetting' and method 'onViewClicked'");
     target.rbSetting = Utils.castView(view, R.id.rb_setting, "field 'rbSetting'", RadioButton.class);
-    view2131427438 = view;
+    view2131558548 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class ContentFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.rg_main, "field 'rgMain' and method 'onViewClicked'");
     target.rgMain = Utils.castView(view, R.id.rg_main, "field 'rgMain'", RadioGroup.class);
-    view2131427435 = view;
+    view2131558545 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,13 +82,13 @@ public class ContentFragment_ViewBinding implements Unbinder {
     target.rbSetting = null;
     target.rgMain = null;
 
-    view2131427436.setOnClickListener(null);
-    view2131427436 = null;
-    view2131427437.setOnClickListener(null);
-    view2131427437 = null;
-    view2131427438.setOnClickListener(null);
-    view2131427438 = null;
-    view2131427435.setOnClickListener(null);
-    view2131427435 = null;
+    view2131558546.setOnClickListener(null);
+    view2131558546 = null;
+    view2131558547.setOnClickListener(null);
+    view2131558547 = null;
+    view2131558548.setOnClickListener(null);
+    view2131558548 = null;
+    view2131558545.setOnClickListener(null);
+    view2131558545 = null;
   }
 }

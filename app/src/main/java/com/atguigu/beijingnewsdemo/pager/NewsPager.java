@@ -97,8 +97,6 @@ public class NewsPager extends BasePager {
 //        }
 
 
-
-
         pagerArrayList = new ArrayList();
 
         pagerArrayList.add(new NewsMenuDetailBasePager(context, dataBeanList.get(0).getChildren()));
