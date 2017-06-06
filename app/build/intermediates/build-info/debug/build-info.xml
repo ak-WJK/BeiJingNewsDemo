@@ -7,25 +7,25 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0-alpha1"
-    timestamp="1496681774636"
+    timestamp="1496682686397"
     token="-7549935888958633727"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1379" />
+        duration="1366" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="19" />
+        duration="18" />
     <task
         name="verifier"
-        duration="13" />
+        duration="7" />
 
     <artifact
-        location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
 
     <build
@@ -88,6 +88,15 @@
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1496682686397"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\ProjectAndroidWorkPatn\BeiJingNewsDemo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
     </build>
 
