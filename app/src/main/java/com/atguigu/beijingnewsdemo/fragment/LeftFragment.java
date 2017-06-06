@@ -35,6 +35,7 @@ public class LeftFragment extends BaseFragment {
     @Override
     public View initView() {
 
+
         listView = new ListView(context);
 
         listView.setPadding(0, DensityUtil.dip2px(context, 50), 0, 0);
@@ -42,6 +43,7 @@ public class LeftFragment extends BaseFragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
 
                 //实现菜单的点击状态的改变
                 prePosition = position;
@@ -51,7 +53,9 @@ public class LeftFragment extends BaseFragment {
                 MainActivity mainActivity = (MainActivity) context;
                 mainActivity.getSlidingMenu().toggle();
 
+
                 switchPager(prePosition);
+
 
             }
         });
@@ -85,8 +89,11 @@ public class LeftFragment extends BaseFragment {
 //        }
 
 
+
         adapter = new MenuAdapter();
         listView.setAdapter(adapter);
+
+
 
     }
 
@@ -118,7 +125,7 @@ public class LeftFragment extends BaseFragment {
                 viewHolder = (ViewHolder) convertView.getTag();
             }
 
-//实现菜单的点击状态的改变
+            //实现菜单的点击状态的改变
             if (prePosition == position) {
                 //高亮
                 viewHolder.tvMenuGuidle.setEnabled(true);
@@ -130,6 +137,7 @@ public class LeftFragment extends BaseFragment {
             NewsPagerBean.DataBean dataBean = menuData.get(position);
 
             viewHolder.tvMenuGuidle.setText(dataBean.getTitle());
+
 
             return convertView;
         }

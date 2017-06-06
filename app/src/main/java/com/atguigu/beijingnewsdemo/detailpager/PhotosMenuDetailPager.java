@@ -11,11 +11,11 @@ import com.atguigu.beijingnewsdemo.base.MenuDetailBasePager;
  * Created by Administrator on 2017/6/5.
  */
 
-public class TopicMenuDetailBasePager extends MenuDetailBasePager {
+public class PhotosMenuDetailPager extends MenuDetailBasePager {
 
     private TextView textView;
 
-    public TopicMenuDetailBasePager(Context context) {
+    public PhotosMenuDetailPager(Context context) {
         super(context);
     }
 
@@ -28,7 +28,7 @@ public class TopicMenuDetailBasePager extends MenuDetailBasePager {
 
     @Override
     public void initData() {
-        textView.setText("专题");
+        textView.setText("图片");
 
     }
 }

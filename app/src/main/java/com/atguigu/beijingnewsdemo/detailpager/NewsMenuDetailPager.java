@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.atguigu.beijingnewsdemo.R;
 import com.atguigu.beijingnewsdemo.base.MenuDetailBasePager;
@@ -21,7 +22,7 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2017/6/5.
  */
 
-public class NewsMenuDetailBasePager extends MenuDetailBasePager {
+public class NewsMenuDetailPager extends MenuDetailBasePager {
 
 
     private final List<NewsPagerBean.DataBean.ChildrenBean> dataBeanList;
@@ -29,10 +30,12 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
     NoScrollViewPager viewpager;
     @BindView(R.id.tab)
     ScrollTabLayout tab;
+    @BindView(R.id.ib_next)
+    ImageButton ibNext;
 
     private ArrayList<TabDedailPager> tabDedailPagers;
 
-    public NewsMenuDetailBasePager(Context context, List<NewsPagerBean.DataBean.ChildrenBean> dataBeanList) {
+    public NewsMenuDetailPager(Context context, List<NewsPagerBean.DataBean.ChildrenBean> dataBeanList) {
         super(context);
         this.dataBeanList = dataBeanList;
     }
@@ -43,6 +46,13 @@ public class NewsMenuDetailBasePager extends MenuDetailBasePager {
         View view = View.inflate(context, R.layout.news_tab_pager_layout, null);
         ButterKnife.bind(this, view);
 
+        ibNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewpager.setCurrentItem(viewpager.getCurrentItem() + 1);
+
+            }
+        });
 
 
         //将tablayout与viewpager建立关系

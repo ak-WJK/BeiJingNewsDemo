@@ -10,11 +10,11 @@ import android.widget.TextView;
 import com.atguigu.beijingnewsdemo.MainActivity;
 import com.atguigu.beijingnewsdemo.base.BasePager;
 import com.atguigu.beijingnewsdemo.base.MenuDetailBasePager;
-import com.atguigu.beijingnewsdemo.detailpager.InteractMenuDetailBasePager;
-import com.atguigu.beijingnewsdemo.detailpager.NewsMenuDetailBasePager;
-import com.atguigu.beijingnewsdemo.detailpager.PhotosMenuDetailBasePager;
-import com.atguigu.beijingnewsdemo.detailpager.TopicMenuDetailBasePager;
-import com.atguigu.beijingnewsdemo.detailpager.VoteMenuDetailBasePager;
+import com.atguigu.beijingnewsdemo.detailpager.InteractMenuDetailPager;
+import com.atguigu.beijingnewsdemo.detailpager.NewsMenuDetailPager;
+import com.atguigu.beijingnewsdemo.detailpager.PhotosMenuDetailPager;
+import com.atguigu.beijingnewsdemo.detailpager.TopicMenuDetailPager;
+import com.atguigu.beijingnewsdemo.detailpager.VoteMenuDetailPager;
 import com.atguigu.beijingnewsdemo.domain.NewsPagerBean;
 import com.atguigu.beijingnewsdemo.fragment.LeftFragment;
 import com.atguigu.beijingnewsdemo.utils.ContentUrl;
@@ -99,11 +99,11 @@ public class NewsPager extends BasePager {
 
         pagerArrayList = new ArrayList();
 
-        pagerArrayList.add(new NewsMenuDetailBasePager(context, dataBeanList.get(0).getChildren()));
-        pagerArrayList.add(new TopicMenuDetailBasePager(context));
-        pagerArrayList.add(new PhotosMenuDetailBasePager(context));
-        pagerArrayList.add(new InteractMenuDetailBasePager(context));
-        pagerArrayList.add(new VoteMenuDetailBasePager(context));
+        pagerArrayList.add(new NewsMenuDetailPager(context, dataBeanList.get(0).getChildren()));
+        pagerArrayList.add(new TopicMenuDetailPager(context));
+        pagerArrayList.add(new PhotosMenuDetailPager(context));
+        pagerArrayList.add(new InteractMenuDetailPager(context));
+        pagerArrayList.add(new VoteMenuDetailPager(context));
 
         setSwitchPager(0);
 
